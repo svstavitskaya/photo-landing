@@ -1,0 +1,28 @@
+@import "mixin";
+@import "variables";
+@import "grid";
+
+
+html {
+  box-sizing: border-box;
+}
+
+// ------------ Common -------------- //
+
+
+.nav__list , .visitor-work__list, .projects__list {
+  @include li-reset;
+}
+
+.header__container, .hero, .projects {
+  max-width: $container-desktop;
+  margin: 0 auto;
+}
+
+.header__full, .studio, .footer {
+  background-color: $background-black;
+}
+
+
+
+

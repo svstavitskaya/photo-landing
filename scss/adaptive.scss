@@ -1,0 +1,723 @@
+@import "mixin";
+@import "variables";
+@import "grid";
+@import "common";
+@import "interactivity";
+
+// ------------------ Tablet 1024 ------------------- //
+
+html {
+  box-sizing: border-box;
+}
+
+@media (max-width: 1919px) {
+
+  // ---------Common--------//
+
+.header__container, .hero, .projects, 
+.studio__container, .contacts, 
+.footer__container {
+    max-width: $container-tablet;
+    }
+
+  // -------Header-----//
+
+    .nav__list {
+        gap: 30px;
+      }
+
+  // -------Hero-----//
+      
+    .hero {
+      padding-top: 34px;
+      padding-bottom: 63px;
+    }
+    
+    .item__image {
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero__title {
+      padding-bottom: 26px;
+      line-height: 24px;
+    }
+
+    .cover__title {
+      line-height: 35px;
+      letter-spacing: 0.6px;
+      width: 100%;
+    }
+
+    .cover__author {
+      margin-bottom: 5px;
+      letter-spacing: -0.5px;
+    }
+  
+    .projects__tag {
+      right: 10px;
+    }
+
+    .tag {
+      padding: 6px 14px;
+    }
+
+
+  // ------Studio-----//
+
+    .studio__descr {
+      width: 50%;
+      margin-right: $gridGutter
+    }
+
+    .studio__container {
+      padding-bottom: 81px;
+    }
+
+    .master-class__descr {
+      left: 30px;
+      bottom: 36px;
+    }
+
+    .form__email {
+      width: 74%;
+      margin-bottom: 20px;
+      padding-left: 20px;
+    }
+
+    .subscr__pic {
+      margin-bottom: 20px;
+    }
+    
+
+  // ------Projects-----//
+
+    .project__cover--span {
+      display: contents;
+    }
+
+    .project__time {
+      bottom: -5px;
+    }
+    
+    .project__descr {
+       top: 29px;
+       left: 33px;
+    }
+
+    .project__title {
+      padding-bottom: 8px;
+    }
+
+  // ------Contacts-----//
+  
+  .contacts__map-wrapper {
+    width: 61.5%;
+      }
+
+  .contacts__map-address {
+    padding-top: 23px;
+    top: unset;
+    bottom: 0;
+    left: 0;
+    height: 34%;
+    width: 100%;
+    padding-left: $gridGutter;
+}
+
+  .studio-name {
+    font-weight: normal;
+  }
+
+  .close-btn {
+    right: 22px;
+  }
+
+  .contacts__address {
+    width: 60%;
+  }  
+
+  .studio-adress--br {
+    display: inline;
+  }
+   
+  .studio-adress {
+    padding-right: 10px;
+  }
+
+  .contacts__applic-heading {
+    padding-bottom: 2px;
+  }
+
+  .contacts-field {
+    padding: 18px 0 13px 23px;
+  }
+
+
+// ------Contacts-----//
+
+.footer__container {
+  padding: 23px 0;
+}
+
+  .footer__logo {
+    padding-top: 6px;
+  }
+
+  .footer__quote {
+    padding-left: 103px;
+  }
+
+  .quote__text, .social__text {
+    letter-spacing: normal;
+  }
+
+  .quote__text--cite {
+    padding-left: 10px;
+  }
+
+}
+
+// --------------------- Tablet 768 ---------------------- //
+
+@media (max-width: 1023px) {
+
+  .header__container, .hero, .projects, 
+  .studio__container, .contacts, 
+  .footer__container {
+    margin: 0 auto;
+    max-width: $container-768;
+  }
+   
+  // -------Header-----//
+
+  .header__nav {
+    display: none;
+  }
+
+  .header__tablet {
+    display: flex;
+    padding: 10px 0 12px 0px;
+    background-color: $background-dark-grey;
+  }
+
+  .header__search-icon {
+    width: 25px;
+    height: 25px;
+}
+
+  .header-burger {
+    max-width: $container-768;
+    margin: 0 auto;
+  }
+
+  .nav__list {
+    gap: 70px;
+  }
+
+  // -------Hero-----//
+
+  .hero {
+    padding-bottom: 66px;
+  }
+
+  .hero__title {
+      padding-bottom: 17px;
+      line-height: 22px;
+      letter-spacing: normal;
+  }
+
+    .hero__tag {
+      top: 18px;
+      right: 17px;
+  }
+
+  .master-class__descr {
+    bottom: 30px;
+  }
+  
+  // ------Studio-----//
+
+  .studio__container {
+     align-items: stretch;
+     padding-bottom: 59px;
+  }
+
+  .subscr__container {
+    width: 48%;
+  }
+
+  .subscr__pic {
+    height: 75%;
+    object-fit: cover;
+    margin-bottom: 18px;
+  }
+
+  .form__email {
+    width: 100%;
+    margin-bottom: 22px;
+  }
+
+  // ------Projects-----//
+
+  .projects {
+    padding-top: 74px;
+  }
+
+  .project__cover {
+    height: 61%;
+  }
+
+  .project__descr {
+    top: 29px;
+  }
+  
+  .projects__tag {
+    top: 6px;
+    right: 8px;
+  }
+
+  .tag {
+    padding: 6px 14px;
+  }
+
+  .project__cover {
+    margin-bottom: 18px;
+  }
+
+  // ------Contacts-----//
+
+  .contacts__wrapper {
+    padding-bottom: 68px;
+    flex-direction: column;
+  }
+
+  .contacts__map-wrapper {
+    padding-top: 23px;
+    margin-bottom: 24px;
+    margin-right: 0;
+    width: 100%;
+    bottom: -4px;
+  }
+
+  .contacts__map-address {
+    height: 33%;
+}
+
+  .contacts__heading {
+    padding-bottom: 0;
+  }
+
+  .contacts__address {
+    width: 65%;
+  }
+
+  .studio-adress {
+    display: inline;
+    padding-right: 0;
+  }
+
+  .studio-tel {
+    display: block;
+  }
+
+  .header__nav--burger .studio-tel {
+    display: none;
+  }
+
+  .contacts__form {
+    width: 65%;
+  }
+
+  .contacts-field {
+    padding-top: 16px;
+  }
+
+  .close-btn {
+    right: 20px;
+  }
+
+  .contacts__applic-heading {
+    padding-bottom: 7px;
+  }
+
+  .contacts__applic-text {
+    padding-bottom: 14px;
+}
+
+   // ------Footer-----//
+
+  .footer__quote {
+    display: none;
+  }
+
+  .social__link--odnoklassniki {
+    margin-right: 16px;
+  }
+
+}
+
+// ----------------------- Mobile 320 --------------------------- //
+
+@media (max-width: 767px) {
+
+  .header__container, .hero, .projects, 
+  .studio__container, .contacts, 
+  .footer__container {
+        max-width: $container-mob;
+  }
+
+  // -------Header-----//
+
+  .header__search-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.header__tablet {
+  padding-left: 21px;
+  padding-bottom: 8px;
+}
+  .header-burger {
+    margin: 0;
+}
+
+  .header__burger-menu {
+    display: block;
+    position: relative;
+  }
+  
+  .header__nav--burger {
+    display: none;
+    position: absolute;
+    z-index: 20;
+    width: 100%;
+    top: 70px;
+    left: 0;
+    padding-left: 22px;
+    background-color: $background-black;
+  }
+
+  .active {
+    display: block;
+  }
+
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .nav__close-btn {
+    @include btn-reset;
+    display: block;
+    margin-bottom: 16px;
+    align-self: flex-start;
+  }
+
+  .nav__item:last-child {
+    margin-bottom: 212px;
+  }
+
+  .studio-tel--burger {
+    display: block;
+    margin-bottom: 36px;
+  }
+
+  .burger-btn {
+    display: block;
+    @include btn-reset;
+  }
+
+  .line-top, .line-middle, .line-bottom {
+    display: block;
+    margin-bottom: 6px;
+    height: 2px;
+    width: 20px;
+    background-color: #FFF;
+  }
+
+  .line-bottom {
+    width: 10px;
+  }
+
+  .search-bar {
+    width: 278px;
+  }
+
+  .search-bar::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+
+
+    // -------Hero-----//
+
+    .hero {
+      padding-top: $gridGutter;
+      padding-bottom: 42px;
+    }
+
+    .hero__wrapper {
+      flex-direction: column;
+     }
+  
+     .hero__master-class {
+      margin-bottom: 27px;
+     }
+    
+     .hero__visitor-work, .hero__master-class {
+      width: 100%;
+    }
+
+    .master-class__descr {
+      left: $gridGutter;
+      bottom: 36px;
+    }
+
+    .cover__author, .btn, .studio__about-text  {
+      font-size: 14px;
+    }
+
+    .cover__author {
+      margin-bottom: 2px;
+    }
+
+    .cover__btn {
+      padding: 11px 18px;
+    }
+
+    .cover__title {
+      width: 70%;
+      margin-bottom: 14px;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0.8px;
+    }
+
+    .hero__title, .studio__title, .form__label {
+      font-size: 18px;
+    }
+
+    .hero__title {
+      padding-bottom: 14px;
+      line-height: 20px;
+      letter-spacing: 0.9px;
+    }
+
+    .hero__tag {
+      top: 4px;
+      right: 0px;
+  }
+
+    .tag {
+      font-size: 12px;
+      padding: 6px 12px;
+    }
+
+    .header__nav--burger .studio-tel {
+      display: block;
+    }
+  
+
+// -------Studio-----//
+
+    .studio__container {
+      flex-direction: column;
+    }
+
+    .studio__title {
+      padding-bottom: 7px;
+    }
+
+    .studio__about-text {
+      line-height: 25px;
+      padding-right: unset;
+    }
+
+    .subscr__container {
+      width: 100%;
+      padding-top: 21px;
+    }
+
+    .subscr__pic {
+      margin-bottom: 22px;
+    }
+
+    .form__email {
+      width: 100%;
+      height: 42px;
+      margin-bottom: 17px;
+    }
+
+    .form__btn {
+      padding: 12px 19px;
+    }
+
+ // ------Projects-----//
+
+ .projects {
+  padding-top: 50px;
+  padding-bottom: 33px;
+}
+
+  .projects__title {
+    font-size: 18px;
+  }
+  
+  .project__time {
+    display: contents;
+  }
+
+  .projects__list {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+  }
+
+  .project__title {
+    padding-top: 4px;
+    padding-bottom: 12px;
+}
+
+  .project__item--oblivion {
+    order: 1;
+  }
+
+  .project__text {
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding-bottom: 11px;
+  }
+
+  .project__descr {
+    bottom: 37px;
+    top: 197px;
+    left: 30px;
+    width: 78%;
+  }
+
+  .project__img {
+    width: 100%;
+    height: 184px;
+  }
+
+  .project__img--semantics, .project__img--oblivion {
+    height: unset;
+  }
+
+  .project__text--semantics, .project__text--oblivion {
+    letter-spacing: normal;
+    line-height: 20px;
+  }
+
+  .projects__tag {
+    right: 5px;
+  }
+
+  .project__btn {
+    padding: 7px 14px;
+}
+
+  .tag {
+    padding: 4px 15px;
+  }
+
+  .project__cover {
+    margin-bottom: 14px;
+  }
+
+  // ------Contacts-----//
+
+  .contacts__wrapper {
+    padding-bottom: 51px;
+  }
+
+  .contacts {
+    max-width: inherit;
+  }
+
+  .contacts__heading {
+    font-size: 18px;
+  }
+
+  .contacts__heading, .contacts__form {
+    padding-left: 20px;
+  }
+
+  .contacts__map-wrapper {
+    padding-top: unset;
+    bottom: -12px;
+    margin-bottom: 39px;
+  }
+
+  .contacts__map-address {
+    height: 33%;
+    padding-left: 20px;
+    padding-top: 28px;
+  }
+
+  .contacts__applic-text {
+    padding-bottom: 18px;
+}
+
+  .ymap, #map {
+    height: 472px;
+  }
+
+  .studio-name, .contacts__applic-heading {
+    font-size: 18px;
+  }
+
+  .studio-name {
+    padding-bottom: 8px;
+  }
+
+  .contacts__address {
+    width: 95%;
+  }
+
+  .studio-adress, .contacts__applic-text, .contacts-field {
+    font-size: 14px;
+    line-height: normal;
+  } 
+
+  .studio-tel {
+    display: block;
+    font-size: 14px;
+    padding-top: 8px;
+  }
+
+  .contacts__form {
+    box-sizing: border-box;
+    width: 94%;
+    padding-left: 20px;
+  }
+
+  .contacts-field {
+    padding-bottom: 9px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding-top: 12px;
+   }
+
+  .contacts--btn {
+    padding: 10px 19px;
+  }
+
+ // ------Footer-----//
+
+ .footer__social {
+  padding-top: 8px;
+ }
+
+.footer__logo {
+  padding-top: 12px;
+}
+
+.footer__copyright {
+  font-size: 10px;
+}
+
+
+}
+

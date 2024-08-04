@@ -1,0 +1,8 @@
+ehthumbs.db
+Thumbs.db
+.DS_Store
+.idea
+images/
+fonts/
+node_modules/
+dist/

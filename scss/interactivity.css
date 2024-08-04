@@ -1,0 +1,168 @@
+.nav__item a:focus {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #BC572B;
+  outline: none; }
+
+.nav__item a:focus-visible {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  background-color: #BC572B; }
+
+.nav__item:hover {
+  color: #FF6E30; }
+
+.nav__item:active {
+  color: #CE4307; }
+
+.nav__close-btn svg:hover path {
+  fill: #FF6E30; }
+
+.nav__close-btn svg:active path {
+  fill: #CE4307; }
+
+.nav__close-btn svg:focus path {
+  fill: #BC572B; }
+
+.search-bar:focus {
+  outline: none;
+  border-bottom: 1px #BC572B solid; }
+
+.search-bar:hover {
+  border: none;
+  border-bottom: 1px #FF6E30 solid; }
+
+.search-bar:hover {
+  outline: none;
+  border-bottom: 1px #CE4307 solid; }
+
+.header__search-icon:focus path {
+  fill: #BC572B; }
+
+.header__search-icon:hover path {
+  fill: #FF6E30; }
+
+.header__search-icon:active path {
+  fill: #CE4307; }
+
+.search-btn__close svg:focus path {
+  fill: #BC572B; }
+
+.search-btn__close svg:hover path {
+  fill: #FF6E30; }
+
+.search-btn__close svg:active path {
+  fill: #CE4307; }
+
+.search-btn__close:focus {
+  outline: none; }
+
+.btn:focus {
+  background-color: #FF6E30;
+  outline: 3px #CE4307 solid; }
+
+.btn:hover {
+  background-color: #BC572B; }
+
+.btn:active {
+  background-color: #CE4307; }
+
+.form__email:hover::-webkit-input-placeholder {
+  color: #FF6E30; }
+
+.form__email:hover:-ms-input-placeholder {
+  color: #FF6E30; }
+
+.form__email:hover::-ms-input-placeholder {
+  color: #FF6E30; }
+
+.form__email:hover::placeholder {
+  color: #FF6E30; }
+
+.form__email:focus {
+  outline: 3px #FF6E30 solid; }
+
+.project__btn:focus {
+  background-color: #BC572B;
+  outline: 3px solid #FF6E30; }
+
+.project__btn:hover {
+  background-color: #FF6E30; }
+
+.project__btn:active {
+  background-color: #CE4307;
+  outline: 3px solid #CE4307; }
+
+.tag:focus {
+  color: #BC572B; }
+
+.tag:hover {
+  color: #FF6E30; }
+
+.tag:active {
+  color: #CE4307; }
+
+.contacts-field:focus {
+  outline: 1px solid #CE4307; }
+
+.contacts-field:hover::-webkit-input-placeholder {
+  color: #FF6E30; }
+
+.contacts-field:hover:-ms-input-placeholder {
+  color: #FF6E30; }
+
+.contacts-field:hover::-ms-input-placeholder {
+  color: #FF6E30; }
+
+.contacts-field:hover::placeholder {
+  color: #FF6E30; }
+
+.contacts-field:active::-webkit-input-placeholder {
+  color: #202020; }
+
+.contacts-field:active:-ms-input-placeholder {
+  color: #202020; }
+
+.contacts-field:active::-ms-input-placeholder {
+  color: #202020; }
+
+.contacts-field:active::placeholder {
+  color: #202020; }
+
+.studio-tel:focus {
+  color: #FF6E30; }
+
+.studio-tel:hover {
+  color: #BC572B; }
+
+.studio-tel:active {
+  color: #CE4307; }
+
+.studio-tel:hover::before {
+  content: url(../images/call_hover.svg); }
+
+.studio-tel:hover::active {
+  content: url(../images/call_active.svg); }
+
+.close-btn svg:focus circle {
+  outline: none;
+  fill: #BC572B; }
+
+.close-btn svg:hover circle {
+  fill: #FF6E30; }
+
+.close-btn svg:active circle {
+  fill: #CE4307; }
+
+.social__link:focus path {
+  outline: none;
+  fill: #BC572B; }
+
+.social__link:hover path {
+  fill: #FF6E30; }
+
+.social__link:active path {
+  fill: #CE4307; }
+
+/*# sourceMappingURL=interactivity.css.map */

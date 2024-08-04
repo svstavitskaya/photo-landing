@@ -1,0 +1,197 @@
+@import "variables";
+
+// ------- Header -------- //
+
+.nav__item a:focus {
+    box-sizing: border-box;
+    background-color: $primiry-dark;
+    outline: none;
+}
+
+.nav__item a:focus-visible {
+    box-sizing: border-box;
+    outline: none;
+    background-color: $primiry-dark;
+}
+
+.nav__item:hover {
+    color: $primiry-color;
+}
+
+.nav__item:active {
+    color: $active-color;
+}
+
+// ------- Nav-burger -------- //
+
+.nav__close-btn svg:hover path {
+    fill: $primiry-color;
+}
+
+.nav__close-btn svg:active path {
+    fill: $active-color;
+}
+
+.nav__close-btn svg:focus path {
+    fill: $primiry-dark;
+}
+
+// ------- Header: search-bar -------- //
+
+.search-bar:focus {
+    outline: none;
+    border-bottom: 1px $primiry-dark solid;
+}
+
+.search-bar:hover {
+    border: none;
+    border-bottom: 1px $primiry-color solid;
+}
+
+.search-bar:hover {
+    outline: none;
+    border-bottom: 1px $active-color solid;
+}
+
+.header__search-icon:focus path {
+    fill: $primiry-dark;
+}
+
+.header__search-icon:hover path {
+    fill: $primiry-color;
+}
+
+.header__search-icon:active path {
+    fill: $active-color;
+}
+
+.search-btn__close svg:focus path {
+    fill: $primiry-dark;
+}
+
+.search-btn__close svg:hover path {
+    fill: $primiry-color;
+}
+
+.search-btn__close svg:active path {
+    fill: $active-color;
+}
+
+.search-btn__close:focus {
+   outline: none;
+}
+
+// ------------ Hero -------------- //
+
+.btn:focus {
+    background-color: $primiry-color;
+    outline: 3px $active-color solid;
+}
+
+.btn:hover {
+    background-color: $primiry-dark;
+}
+
+.btn:active {
+    background-color: $active-color;
+}
+
+// ------------ Studio -------------- //
+
+.form__email:hover::placeholder {
+    color: $primiry-color;
+}
+
+.form__email:focus {
+    outline: 3px $primiry-color solid;
+}
+
+// ------------ Projects -------------- //
+
+.project__btn:focus {
+    background-color: $primiry-dark;
+    outline: 3px solid $primiry-color;
+}
+
+.project__btn:hover {
+    background-color: $primiry-color;
+}
+
+.project__btn:active {
+    background-color: $active-color;
+    outline: 3px solid $active-color;
+}
+
+.tag:focus {
+    color: $primiry-dark;
+}
+
+.tag:hover {
+    color: $primiry-color;
+}
+
+.tag:active {
+    color: $active-color;
+}
+
+// ------------ Contacts -------------- //
+
+.contacts-field:focus {
+    outline: 1px solid $active-color;
+}
+
+.contacts-field:hover::placeholder {
+    color: $primiry-color;
+}
+
+.contacts-field:active::placeholder {
+    color: $background-black;
+}
+
+.studio-tel:focus {
+    color: $primiry-color;
+}
+
+.studio-tel:hover {
+    color: $primiry-dark;
+}
+
+.studio-tel:active {
+    color: $active-color;
+}
+
+.studio-tel:hover::before {
+    content: url(../images/call_hover.svg);
+}
+
+.studio-tel:hover::active {
+    content: url(../images/call_active.svg);
+}
+
+.close-btn svg:focus circle {
+    outline: none;
+    fill: $primiry-dark;
+}
+
+.close-btn svg:hover circle {
+    fill: $primiry-color;
+}
+
+.close-btn svg:active circle {
+    fill: $active-color;
+}
+
+// ------------ Footer -------------- //
+
+.social__link:focus path {
+    outline: none;
+    fill: $primiry-dark;
+}
+
+.social__link:hover path {
+    fill: $primiry-color;
+}
+
+.social__link:active path {
+    fill: $active-color;
+}

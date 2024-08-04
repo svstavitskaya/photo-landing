@@ -1,0 +1,561 @@
+@import "mixin";
+@import "variables";
+@import "grid";
+@import "common";
+@import "interactivity";
+
+html {
+  box-sizing: border-box;
+}
+
+// ------- Header -------- //
+
+.header__burger-menu, .burger-btn, .header__tablet {
+  display: none;
+}
+
+.header__container {
+  padding: 25px 0;
+}
+
+.header__logo {
+  cursor: pointer;
+  width: 100%;
+  margin-right: 160px;
+}
+
+.header__nav {
+  align-self: center;
+}
+
+.nav__list {
+  display: flex;
+  gap: 79px;
+}
+
+.nav__item {
+  cursor: pointer;
+   @include text;
+  font-family: 'TT Firs Neue', 'Arial';
+  color: #FFF;
+}
+
+.header__search-icon {
+  cursor: pointer;
+}
+
+.header__search-form {
+  display: block;
+  position: relative;
+}
+
+.header__search-wrapper {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  right: 0;
+}
+
+.active {
+  display: block;
+}
+
+.search-bar {
+  padding: 6px 0 6px 5px;
+  width: 342px;
+  height: 30px;
+  background-color: $background-black;
+  border: none;
+  border-bottom: 1px $background-grey solid;
+}
+
+.search-bar::-webkit-input-placeholder {
+  @include text;
+  font-family: 'TT Firs Neue', 'Arial';
+  color: $background-grey;
+}
+
+.search-btn__close {
+  @include btn-reset;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  right: 0;
+}
+
+.nav__item--search-open {
+  color: $background-dark-grey;
+}
+
+.nav__close-btn {
+  display: none;
+}
+
+// ------------ Hero -------------- //
+
+.hero {
+  padding-top: 41px;
+  padding-bottom: 25px;
+}
+
+.hero__container {
+  @include li-reset;
+  padding-bottom: $section-margin;
+}
+
+.hero__wrapper {
+  display: flex;
+ }
+
+.hero__master-class {
+  position: relative;
+  width: 50%;
+  margin-right: 30px;
+}
+
+.hero__visitor-work {
+  width: 50%
+}
+
+.hero__title {
+  @include subheading;
+  padding-bottom: 18px;
+  letter-spacing: 1.2px;
+}
+
+.master-class__descr {
+  position: absolute;
+  z-index: 10;
+  left: 58px;
+  bottom: 101px;
+}
+
+.cover__author {
+  font-family: 'TT Firs Neue';
+  margin-bottom: 3px;
+  @include text;
+  color: #FFF;
+}
+
+.cover__title {
+  font-family: 'TT Firs Neue';
+  color: #FFF;
+  @include subheading;
+  width: 80%;
+  margin-bottom: 22px;
+  font-size: 36px;
+  line-height: 35px;
+  letter-spacing: 1.8px;
+}
+
+.hero__item {
+  position: relative;
+}
+
+.tag {
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  @include project-tag;
+  padding: 7px 14px;
+  background-color: $background-black;
+}
+
+.hero__tag {
+  top: 15px;
+  right: 15px;
+}
+
+.btn {
+  @include btn-reset;
+  @include btn;
+  background-color: $primiry-color;
+}
+
+// ------------ Studio -------------- //
+
+.studio {
+  background-color: $background-black;
+}
+
+.studio__container {
+  @include container-desktop;
+  display: flex;
+  padding-top: 33px;
+  padding-bottom: $section-margin;
+  // gap: $gridGutter 0;
+}
+
+.studio__container .studio__descr {
+  width: 50%;
+  margin-right: 30px;
+}
+
+ .subscr__container {
+  flex-shrink: 0;
+  padding-top: $gridGutter;
+}
+
+.studio__title {
+  margin: 0;
+  padding-bottom: 12px;
+  @include subheading;
+  color: #FFF;
+  letter-spacing: 1px;
+}
+
+.studio__about-text {
+  @include text;
+  font-family: 'Roboto', 'arial';
+  line-height: 28px;
+  color: $text-light-grey;
+  padding-right: 30px;
+}
+
+.subscr__pic {
+  margin-bottom: 25px;
+}
+
+.subscr__form {
+  width: 100%;
+}
+
+.form__label {
+  display: block;
+  margin-bottom: 16px;
+  @include subheading;
+  color: $text-light-grey;
+  line-height: 20px;
+}
+
+.form__email {
+  box-sizing: border-box;
+  margin-right: 28px;
+  height: 50px;
+  width: 75%;
+  padding-left: 23px;
+  background-color: $background-dark-grey;
+  @include text;
+  font-family: 'Roboto', 'Arial', 'Helvetica', 'sans-serif';
+  color: $text-light-grey;
+}
+
+.form__email--invalid {
+  border: none;
+  outline: 1px solid $invalid;
+}
+
+input .form__email:valid {
+  color: $background-black;
+  background-color: $background-dark-grey;
+  border: none;
+  outline: none;
+}
+
+input:-internal-autofill-selected {
+  background-color: -internal-light-dark(rgb(74, 74, 74), rgba(70, 90, 126, 0.4)) !important;
+}
+
+.form__container {
+  position: relative;
+}
+
+.form__error--disable {
+  display: none;
+}
+
+.form__error {
+  position: absolute;
+  top: 40px;
+  left: 23px;
+  font-family: 'Roboto', 'Arial', 'Helvetica', 'sans-serif';
+  font-size: 9px;
+  font-weight: normal;
+  line-height: normal;
+  color: $invalid;
+}
+
+// ------------ Projects -------------- //
+
+.projects {
+  padding: 73px 0;
+}
+
+.projects__title {
+  padding-bottom: 16px;
+  @include subheading;
+  color: $background-black;
+  letter-spacing: 1px;
+}
+
+.project__cover {
+  display: block;
+  margin-bottom: 13px;
+}
+
+.project__cover--span {
+  margin: 0;
+}
+
+.project__img {
+  max-width: unset;
+  object-fit: cover;
+}
+
+.project__text {
+  @include text;
+  font-family: 'Roboto', 'arial';
+  color: $background-black;
+  }
+
+.project__text--semantics, .project__text--oblivion, .project__title {
+  color: #FFF
+}
+
+.project__title {
+  @include subheading;
+  padding-bottom: 6px;
+  letter-spacing: 1px;
+}
+
+.project__time {
+  @include dates;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  z-index: 10;
+}
+
+.project__time--semantics, .project__time--oblivion {
+  position: relative;
+  padding-bottom: 2px;
+  color: #FFF;
+}
+
+.project__time::before {
+  content: url('../images/calendar.svg');
+  display: inline-block;
+  width: 14px;
+  height: 24px;
+  margin-right: 4px;
+  text-align: center;
+}
+
+.project__time--semantics::before {
+  content: url('../images/calendar_fff.svg');
+}
+
+.project__time--oblivion::before {
+  content: url('../images/calendar_fff.svg');
+}
+
+.projects__item {
+  position: relative;
+}
+
+.projects__tag {
+  top: 7px;
+  right: 7px;
+}
+
+.project__item--semantics, .project__item--oblivion {
+  position: relative;
+}
+
+.project__descr {
+  position: absolute;
+  z-index: 10;
+  top: 22px;
+  bottom: 30px;
+  left: 30px;
+  width: 50%;
+  }
+
+.project__btn {
+  padding: 12px 14px;
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  justify-self: flex-end;
+  background-color: transparent;
+  border: 3px solid $primiry-color;
+}
+
+// ------------ Contacts -------------- //
+
+.contacts {
+  @include container-desktop;
+  margin-bottom: $section-margin;
+}
+
+.contacts__heading {
+  padding-bottom: 22px;
+  @include subheading;
+  color: $background-black;
+  letter-spacing: 1px;
+}
+
+.contacts__wrapper {
+  display: flex;
+}
+
+.contacts__map-wrapper {
+  position: relative;
+  margin-right: $gridGutter;
+  width: 66%;
+  flex-shrink: 0;
+}
+
+.contacts__application-container {
+  padding: 0;
+}
+
+.contacts__map-address {
+  box-sizing: border-box;
+  padding: 179px 20px 0 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 48%;
+  background-color: rgba(32, 32, 32, 0.85);
+}
+
+.contacts__address {
+  width: 85%;
+}
+  
+.studio-name {
+  @include subheading;
+  padding-bottom: 5px;
+  color: #FFF;
+}
+
+.studio-adress {
+  @include text;
+  font-family: 'Roboto', 'Arial';
+  color: $text-light-grey;
+  line-height: 28px;
+}
+
+.studio-tel {
+  @include text;
+  font-family: 'TT Firs Neue', 'Arial';
+  color: $primiry-color;
+}
+
+.studio-tel--burger {
+  display: none;
+}
+
+.studio-tel::before {
+  content: url(../images/call.svg);
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-right: 1px;
+  line-height: 22px;
+}
+
+.close-btn {
+  cursor: pointer;
+  z-index: 10;
+  margin-bottom: 135px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: $text-light-color;
+}
+
+//------Form-----//
+
+.contacts__application-container {
+  border-style: none;
+}
+
+.contacts__applic-heading {
+  padding: 0;
+  padding-bottom: 5px;
+  @include subheading;
+  color: $background-black;
+}
+
+.contacts__applic-text {
+  padding-bottom: 10px;
+  @include dates;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.contacts-field {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 15px 0 15px 23px;
+  border-style: none;
+  background-color: $background-grey;
+  @include dates;
+  font-size: 16px;
+  color: $text-light-color;
+  line-height: 19px;
+}
+
+.contacts-field--comment {
+  height: 150px;
+  box-sizing: border-box;
+}
+
+// ------------ Footer -------------- //
+
+
+.footer__container {
+  @include container-desktop;
+  padding: 26px 0;
+}
+
+.footer__copyright {
+  @include project-tag;
+  font-family: 'TT Firs Neue', "Roboto", "Arial";
+  color: $background-grey;
+  text-align: start;
+}
+
+.quote__text, .social__text {
+  @include text;
+  font-family: "Roboto", "Arial";
+  color: $text-light-grey;
+}
+
+.social__text {
+  padding-bottom: 5px;
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__quote {
+  padding-left: 172px;
+}
+
+.social__container {
+  text-align: center;
+}
+
+.social__link {
+  cursor: pointer;
+}
+
+.social__link--odnoklassniki {
+  margin-right: 20px;
+}
+
+
+// ------------ Adaptive -------------- //
+
+@import "adaptive";

@@ -1,0 +1,71 @@
+@import "variables";
+
+// ---------Desktop-------//
+@mixin container-desktop {
+  max-width: $container-desktop;
+  margin: 0 auto;
+}
+
+// -------- Resets ---------//
+
+@mixin li-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+// --------- Text --------- //
+
+@mixin text {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+@mixin subheading {
+  font-family: 'TT Firs Neue';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+@mixin dates {
+  color: #999;
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+@mixin project-tag {
+  color: #FFF;
+  text-align: center;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+// ---------- Buttons Style --------- //
+
+@mixin btn {
+  padding: 15px 18px;
+  color: #FFF;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
