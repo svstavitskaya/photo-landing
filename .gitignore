@@ -6,3 +6,4 @@ images/
 fonts/
 node_modules/
 dist/
+.vscode
